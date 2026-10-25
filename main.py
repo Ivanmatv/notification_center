@@ -1,6 +1,6 @@
-from email import EmailNotification
-from telegram import TelegramNotification
-from push import PushNotification
+from email_notification_center import EmailNotification
+from telegram_notification_center import TelegramNotification
+from push_notification_center import PushNotification
 
 
 push = PushNotification('Push')

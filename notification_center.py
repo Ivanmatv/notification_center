@@ -6,7 +6,4 @@ class NotificationCenter:
         return self.__name
 
     def send_message(self, message) -> None:
-        name = self.get_name()
-
         print(message)
-        print(f"Сообщение отправлено через '{name}'")
