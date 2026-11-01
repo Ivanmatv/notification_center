@@ -11,7 +11,7 @@ NOTIFICATION_CENTRES = {
 
 notification_center = None
 
-message = 'Внимание! Новая акция'
+MESSAGE  = 'Внимание! Новая акция'
 
 STOP_COMMAND = "выйти"
 input_notification_method = ""
@@ -41,6 +41,6 @@ while input_notification_method != STOP_COMMAND:
         notification_center = NOTIFICATION_CENTRES[input_notification_method](input_user_login)
 
         if notification_center.is_valid_user_login():
-            notification_center.send_message(message)
+            notification_center.send_message(MESSAGE)
     else:
         print("Такой команды нет!")
