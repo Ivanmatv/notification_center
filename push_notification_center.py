@@ -5,12 +5,12 @@ class PushNotification(NotificationCenter):
     def __init__(self, application_name: str):
         super().__init__()
         self.__application_name = application_name
-        self.__applications = ["MAX"]
+        self.__application_storage = ["MAX"]
         self.is_valid_login = False
         self.__check_application_name()
 
     def __check_application_name(self) -> None:
-        if self.__application_name in self.__applications:
+        if self.__application_name in self.__application_storage:
             print(f"application - {self.__application_name} - is exist")
             self.is_valid_login = True
         else:
